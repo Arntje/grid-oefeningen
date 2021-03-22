@@ -1,0 +1,83 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(212, 36%, 90%);
+    font-family: Arial Black, Arial, sans-serif;
+}
+
+.container  {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas:
+    ". . . Box1"
+    "Box2 Box2 Box3 ."
+    "Box2 Box2 Box4 Box5"
+    ". . . ."
+    ". Box6 Box7 Box7"
+    "Box8 Box9 Box7 Box7"
+    "Box10 . . .";
+}
+
+div {
+    margin: 5px;
+}
+#Box1, #Box3, #Box4, #Box5, #Box6, #Box8, #Box9, #Box10 {
+    background-color: hsl(212, 43%, 65%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:  hsl(212, 36%, 90%);
+}
+
+#Box2, #Box7    {
+    background-color: hsl(208, 48%, 47%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:  hsl(212, 36%, 90%);
+}
+
+#Box1   {
+    grid-area: Box1;
+}
+
+#Box2   {
+    grid-area: Box2;
+}
+
+#Box3   {
+    grid-area: Box3;
+}
+
+#Box4   {
+    grid-area: Box4;
+}
+
+#Box5   {
+    grid-area: Box5;
+}
+
+#Box6 {
+    grid-area: Box6;
+}
+
+#Box7   {
+    grid-area: Box7;
+}
+
+#Box8   {
+    grid-area: Box8;
+}
+
+#Box9   {
+    grid-area: Box9;
+}
+
+#Box10   {
+    grid-area: Box10;
+}
